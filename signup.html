@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+  </head>
+  <body>
+    <form action="" id="auth">
+      <div>
+        <input type="email" placeholder="email address" name="" id="" />
+      </div>
+      <div>
+        <input type="password" placeholder="password" name="" id="" />
+      </div>
+      <button>SignUp</button>
+    </form>
+
+    <script src="./main.js"></script>
+    <script>
+      const SignUpForm = document.querySelector('#auth');
+
+      SignUpForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        SignUp(SignUpForm);
+        console.log('clicked');
+      });
+    </script>
+  </body>
+</html>

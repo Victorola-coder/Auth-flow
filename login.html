@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <form action="" id="auth">
+      <div>
+        <input type="email" placeholder="email" name="" id="" />
+      </div>
+      <div>
+        <input type="password" name="" id="passord" placeholder="password" />
+      </div>
+      <button>login</button>
+    </form>
+
+    <script src="./main.js"></script>
+    <script>
+      const loginForm = document.querySelector('#auth');
+      loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        Login(loginForm);
+      });
+    </script>
+  </body>
+</html>
