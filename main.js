@@ -14,11 +14,11 @@ const Login = async (el) => {
     }),
   });
 
-  document.location.replace('/');
 
   console.log(email.value, password.value);
 
   const res = await response.json();
+  document.location.replace('/');
   console.log(res);
   alert(res.msg);
 };
@@ -37,8 +37,8 @@ const SignUp = async (el) => {
     }),
   });
 
-  document.location.replace('./login.html');
   const res = await response.json();
+  document.location.replace('./login.html');
   console.log(res);
   alert(res.msg);
 };
