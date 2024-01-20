@@ -19,12 +19,13 @@ export default function Login() {
       body: JSON.stringify(formData),
     });
 
-    window.location.replace("/");
 
     const res = await response.json();
 
     console.log(res);
     alert(res.msg);
+    window.location.replace("/");
+    
   };
 
   const handleChange = (e) => {
