@@ -19,12 +19,13 @@ export default function SignUp() {
       body: JSON.stringify(formData),
     });
 
-    window.location.replace("/login");
 
     const res = await response.json();
 
     console.log(res);
     alert(res.msg);
+// redirects user to login
+    window.location.replace("/login");
   };
 
   const handleChange = (e) => {
