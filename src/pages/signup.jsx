@@ -1,4 +1,5 @@
 import { useState } from "react";
+// import { BASE_URL } from "../config/index";
 
 export default function SignUp() {
   const BASE_URL = "https://cart-royal-api.onrender.com";
@@ -19,12 +20,11 @@ export default function SignUp() {
       body: JSON.stringify(formData),
     });
 
-
     const res = await response.json();
 
     console.log(res);
     alert(res.msg);
-// redirects user to login
+    // redirects user to login
     window.location.replace("/login");
   };
 
