@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+// import { BASE_URL } from "../config/index";
 export default function Login() {
   const BASE_URL = "https://cart-royal-api.onrender.com";
 
@@ -19,13 +19,11 @@ export default function Login() {
       body: JSON.stringify(formData),
     });
 
-
     const res = await response.json();
 
     console.log(res);
     alert(res.msg);
     window.location.replace("/");
-    
   };
 
   const handleChange = (e) => {
