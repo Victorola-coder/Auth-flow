@@ -1,8 +1,6 @@
 import { useState } from "react";
-// import { BASE_URL } from "../config/index";
+import { BASE_URL } from "../config/index";
 export default function Login() {
-  const BASE_URL = "https://cart-royal-api.onrender.com";
-
   const [formData, setFormData] = useState({
     email: "",
     password: "",

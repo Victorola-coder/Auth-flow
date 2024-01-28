@@ -1,16 +1,17 @@
-import { useState } from "react";
-// import { BASE_URL } from "../config/index";
+import { useState } from "react"; // this is to manage the states in our app
+
+import { BASE_URL } from "../config/index"; // import the base_url of the endpoint
 
 export default function SignUp() {
-  const BASE_URL = "https://cart-royal-api.onrender.com";
-
+  // set the states in the objects for the form
   const [formData, setFormData] = useState({
-    email: "",
-    password: "",
+    email: "", // string : we dont need to set types cos na js not ts
+    password: "", // same as above
   });
 
+  // create a function that handles submission of the form data to the backend
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); // this prevents the page from reloading when the form is submitted
 
     const response = await fetch(`${BASE_URL}/auth/SignUp`, {
       method: "POST",
